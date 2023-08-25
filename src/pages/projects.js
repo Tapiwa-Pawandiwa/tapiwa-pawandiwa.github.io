@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-import DinerImage from "../../public/images/projects/Diner/Diner_Cover.png";
+import DinerImage from "../../public/images/projects/Diner/Diner_COVER.png";
 import RecipeAppImage from "../../public/images/projects/recipe.png";
 import UberEatsImage from "../../public/images/projects/UberEats/uber_eats_clone.png";
 import NumberGuessingImage from "../../public/images/projects/guessing.png";
