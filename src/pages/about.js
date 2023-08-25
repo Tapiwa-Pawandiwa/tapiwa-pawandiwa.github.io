@@ -13,7 +13,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Tapiwa's Portfolio Website | </title>
+        <title>Tapiwa&apos;s Portfolio Website | </title>
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col item-center justify-center">
@@ -55,7 +55,7 @@ const about = () => {
                 </span>
                 Technology empowers people to do what they want to do. It lets
                 people be creative. It lets people be productive. It lets people
-                learn things they didn't think they could learn before, and so
+                learn things they didn&apos;t think they could learn before, and so
                 in a sense, it is all about potential.
                 <span className="absolute bottom-0 right-0 transform translate-x-2/3 translate-y-1/4 text-5xl text-primary">
                   &rdquo;

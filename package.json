@@ -1,5 +1,6 @@
 {
-  "name": "developer-portfolio-starter-code",
+  "name": "tapiwa-developer-portfolio",
+  "homepage": "https://github.com/Tapiwa-Pawandiwa/tapiwa-pawandiwa.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {

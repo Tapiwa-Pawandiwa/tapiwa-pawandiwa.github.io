@@ -18,11 +18,12 @@ const Footer = () => {
     <footer className="w-full border-t-2 border-dark text-lg justify-center items-center self-center sm:text-base  bg-slate-400">
       <Layout className="py-5 flex items-center justify-center lg: flex-col lg:py-6">
         <span className=" flex flex-col items-center justify-center self-center">
-          <div className="text-primary text-2xl font-bold ">
-            {" "}
+          <div className="text-primary text-2xl font-bold">
+        
             {`${dateCalculator()}`}
           </div>
-          Days since first "Hello World"
+          <p>Days since first &quot;Hello World&quot; </p>
+          
         </span>
       </Layout>
     </footer>
