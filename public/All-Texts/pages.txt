@@ -118,3 +118,18 @@ What Is Higher Order Component (Hoc) In React?
 
 
 
+-------------------------
+
+
+PROJECTS: 
+
+**DINER****
+
+Name :'Diner',
+summary:
+      'A React Native Mobile application where hosts can invite guests to have a meal in their home at a cost. Guests have the opportunity to experience authentic home food nearby.  ',
+FullDescription: 'I was inspired by the idea of easily accessing great home chefs and authentic food , so i made an app that brought it all together.',
+imgURL: DinerImage,
+videoURL: '',
+githubURL: 'https://github.com/Tapiwa-Pawandiwa/DinerExpoFood',
+stack: [JavaScriptImage, ReactNativeImage, AWSImage, GraphQLImage],
