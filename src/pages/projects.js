@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-import DinerImage from "../../public/images/projects/Diner/Diner_COVER.png";
-import RecipeAppImage from "../../public/images/projects/recipe.png";
-import UberEatsImage from "../../public/images/projects/UberEats/uber_eats_clone.png";
-import NumberGuessingImage from "../../public/images/projects/guessing.png";
-import ExpenseTrackerImage from "../../public/images/projects/Expense/expense_tracker.png";
-import projectsCover from "../../public/images/ProjectsImage.png";
+import Diner_COVER from "../../public/images/projects/Diner/Diner_COVER.png";
+import recipe from "../../public/images/projects/recipe.png";
+import uber_eats_clone from "../../public/images/projects/UberEats/uber_eats_clone.png";
+import guessing from "../../public/images/projects/guessing.png";
+import expense_tracker from "../../public/images/projects/Expense/expense_tracker.png";
+import ProjectsImage from "../../public/images/ProjectsImage.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const projectsData = [
@@ -19,7 +19,7 @@ const projectsData = [
     summary:
       "A React Native Mobile application where hosts can invite guests to have a meal in their home at a cost. Guests have the opportunity to experience authentic home food nearby.  ",
     fullDescription: "",
-    img: DinerImage,
+    img: Diner_COVER,
     type: "Mobile App",
     videoURL: "",
     github: "https://github.com/Tapiwa-Pawandiwa/DinerExpoFood",
@@ -31,7 +31,7 @@ const projectsData = [
       "A simple app that displays recipes from different cuisines and categories",
     fullDescription: "",
     type: "Mobile App",
-    img: RecipeAppImage,
+    img: recipe,
     github: "https://github.com/Tapiwa-Pawandiwa/MealsApp",
     // stack: [JavaScriptImage, ReactNativeImage],
   },
@@ -40,7 +40,7 @@ const projectsData = [
     summary:
       "I developed an Uber Eats Clone using React Native and AWS Amplify",
     fullDescription: "",
-    img: UberEatsImage,
+    img: uber_eats_clone,
     type: "Mobile App",
     github: "https://github.com/Tapiwa-Pawandiwa/UberEatsUser",
     // stack: [JavaScriptImage, ReactNativeImage, AWSImage, GraphQLImage],
@@ -50,7 +50,7 @@ const projectsData = [
     summary: "A simple number guessing game",
     fullDescription: "",
     type: "Mobile App",
-    img: NumberGuessingImage,
+    img: guessing,
     github: "https://github.com/Tapiwa-Pawandiwa/RandomGuessingApp",
     // stack: [JavaScriptImage, ReactNativeImage],
   },
@@ -59,7 +59,7 @@ const projectsData = [
     type: "Mobile App",
     summary: "A simple expense tracker app",
     fullDescription: "",
-    img: ExpenseTrackerImage,
+    img: expense_tracker,
     github: "https://github.com/Tapiwa-Pawandiwa/ExpenseTracker",
     //stack: [JavaScriptImage, ReactNativeImage],
   },
@@ -92,7 +92,7 @@ const FeaturedProject = ({ type, title, summary, img, github }) => {
             className="hover:underline underline-offset-2"
           >
             <h2 className="my-2 w-full text-left text-4xl font-bold font-mont sm:text-sm ">
-              {title}{" "}
+              {title}
             </h2>
           </Link>
           <p className="my-2 font-medium text-dark sm:text-sm  ">{summary}</p>
@@ -172,7 +172,7 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-0">
             <div className="col-span-4 sm:col-span-12 relative">
               <Image
-                src={projectsCover}
+                src={ProjectsImage}
                 alt="projects"
                 className="w-full h-auto"
               />
@@ -218,6 +218,15 @@ const projects = () => {
                 title={projectsData[3].title}
                 github={projectsData[3].github}
                 summary={projectsData[3].summary}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type={projectsData[4].type}
+                img={projectsData[4].img}
+                title={projectsData[4].title}
+                github={projectsData[4].github}
+                summary={projectsData[4].summary}
               />
             </div>
           </div>
