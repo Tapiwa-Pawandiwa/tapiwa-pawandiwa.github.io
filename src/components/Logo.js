@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import {motion} from 'framer-motion';
-
+import logo from '../../public/images/personal_logo.png';
 const MotionLink = motion(Link);
 
 const Logo = () => {
@@ -16,7 +16,7 @@ const Logo = () => {
             
             }}
         >
-            <Image src='/../public/images/personal_logo.png' width={100} height={100} alt='logo' />
+            <Image src={logo} width={100} height={100} alt='logo' />
         </MotionLink>
         
     </motion.div>

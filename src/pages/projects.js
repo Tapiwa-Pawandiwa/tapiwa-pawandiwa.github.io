@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-//import Diner_Cover from "../../public/images/projects/Diner/Diner_Cover.png";
 import recipe from "../../public/images/projects/recipe.png";
+import Diner_Cover from "../../public/images/projects/Diner/DinerHead.jpg";
 import uber_eats_clone from "../../public/images/projects/UberEats/uber_eats_clone.png";
 import guessing from "../../public/images/projects/guessing.png";
 import expense_tracker from "../../public/images/projects/Expense/expense_tracker.png";
@@ -19,7 +19,7 @@ const projectsData = [
     summary:
       "A React Native Mobile application where hosts can invite guests to have a meal in their home at a cost. Guests have the opportunity to experience authentic home food nearby.  ",
     fullDescription: "",
-    //img: Diner_Cover,
+    img: Diner_Cover,
     type: "Mobile App",
     videoURL: "",
     github: "https://github.com/Tapiwa-Pawandiwa/DinerExpoFood",
@@ -85,7 +85,9 @@ const FeaturedProject = ({ type, title, summary, img, github }) => {
         </Link>
 
         <div className="w-full flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-          <span className="text-primary font-poppins text-xl xs:text-base">{type}</span>
+          <span className="text-primary font-poppins text-xl xs:text-base">
+            {type}
+          </span>
           <Link
             href={github}
             target="_blank"
@@ -130,7 +132,9 @@ const Project = ({ type, title, summary, img, github }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-poppins text-xl lg:text-lg md:text-base">{type}</span>
+        <span className="text-primary font-poppins text-xl lg:text-lg md:text-base">
+          {type}
+        </span>
         <Link
           href={github}
           target="_blank"
@@ -164,10 +168,13 @@ const projects = () => {
         <title>Tapiwa&apos;s Portfolio | Projects </title>
         <meta name="projects" content="projects by Tapiwa" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Projects" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <AnimatedText
+            text="Projects"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-0">
             <div className="col-span-4 sm:col-span-12 relative">
@@ -185,13 +192,13 @@ const projects = () => {
               </div>
             </div>
             <div className="col-span-8 sm:col-span-12 ">
-             {/* <FeaturedProject
+              <FeaturedProject
                 type={projectsData[0].type}
                 img={projectsData[0].img}
                 title={projectsData[0].title}
                 github={projectsData[0].github}
                 summary={projectsData[0].summary}
-  />*/}
+              />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
