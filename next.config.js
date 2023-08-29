@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   // Add basePath
-  basePath: '/github-pages',
+  basePath: '/tapiwa-pawandiwa.github.io',
   assetPrefix: '/tapiwa-Pawandiwa.github.io/',
 };
 
