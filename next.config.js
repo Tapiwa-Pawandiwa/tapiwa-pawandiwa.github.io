@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/Tapiwa-Pawandiwa.github.io',
-  assetPrefix: '/Tapiwa-Pawandiwa.github.io/',
+  basePath: '/tapiwa-Pawandiwa.github.io',
+  assetPrefix: '/tapiwa-Pawandiwa.github.io/',
 };
 
 module.exports = nextConfig;
