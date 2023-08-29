@@ -46,7 +46,7 @@ const about = () => {
                 active participation in various university competitions, such as
                 the Hultz Prize Competition and the Innovation Think Tank at
                 Rhodes University. <br/> 
-                
+                <br/> 
                 One notable experience was our participation
                 in a blockchain competition, where my friends and I were
                 challenged to devise an inventive blockchain solution. Our
@@ -55,6 +55,7 @@ const about = () => {
                 Sudo-Soc university society. Within Sudo-Soc, our focus was on
                 educating fellow students in coding, orchestrating coding
                 community events, and coordinating hackathons.  <br/>
+                <br/> 
                 Furthermore, I was part of an initiative within Sudo-Soc that entailed
                 establishing a computer lab within the local community. This
                 endeavor exemplified our commitment to extending the benefits of
