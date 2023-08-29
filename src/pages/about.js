@@ -28,41 +28,44 @@ const about = () => {
               <h2 className="mb-4 text-3xl font-bold uppercase text-dark/75 xl:items-center ">
                 About Me
               </h2>
-              <p className="font-poppinsLight text-xl">
-                Hi there,My name is Tapiwa and I enjoy creating software
+              <p className="font-poppinsLight text-xl justify-center">
+                Hi there, my name is Tapiwa and I enjoy creating software
                 applications. I am currently a Masters student in Computer
                 Science. I enjoy building creating innovative projects. I love
                 Art and Design and as a result of this I also enjoy creating
-                tantilizing user interfaces and user experiences. I consider
-                myself a Developer and a Designer. I have been coding in various
+                tantilizing user interfaces and user experiences. <br/>
+                
+                I consider myself a Developer and a Designer. I have been coding in various
                 languages for the past 6 years, from Web applications to Mobile
                 Apps.
               </p>
-              <p className="my-4 font-poppinsLight text-xl">
+              <p className="my-4 font-poppinsLight text-xl justify-center">
                 I firmly believe in the transformative potential of technology
                 to impact lives, and I am deeply enthusiastic about utilizing my
                 skills to bring about positive change. My journey has involved
                 active participation in various university competitions, such as
                 the Hultz Prize Competition and the Innovation Think Tank at
-                Rhodes University. <br/> One notable experience was our participation
+                Rhodes University. <br/> 
+                
+                One notable experience was our participation
                 in a blockchain competition, where my friends and I were
                 challenged to devise an inventive blockchain solution. Our
                 efforts led us to secure the first-place position in the
                 competition. Alongside this, I played an integral role in the
                 Sudo-Soc university society. Within Sudo-Soc, our focus was on
                 educating fellow students in coding, orchestrating coding
-                community events, and coordinating hackathons.  <br/>Furthermore, I
-                was part of an initiative within Sudo-Soc that entailed
+                community events, and coordinating hackathons.  <br/>
+                Furthermore, I was part of an initiative within Sudo-Soc that entailed
                 establishing a computer lab within the local community. This
                 endeavor exemplified our commitment to extending the benefits of
                 technology beyond the university setting, bridging the digital
                 divide, and fostering technological inclusivity
               </p>
-              <p className="my-4 font-poppinsLight text-xl">
+              <p className="my-4 font-poppinsLight text-xl justify-center">
                 I believe technology is forever changing, as a result of this I
                 am not afraid to learn new languages, skills and technologies. I am currently researching and experimenting with Blockchain and Web3. 
               </p>
-              <p className="my-4 font-poppinsLight text-xl">
+              <p className="my-4 font-poppinsLight text-xl justify-center">
                 I have worked on React Websites. React Native Mobile
                 Applications and C# Desktop Applications. For the backend I have
                 worked with NodeJS, ExpressJS, MongoDB, Firebase, AWS Amplify
@@ -85,12 +88,12 @@ const about = () => {
               <h3 className="mb-4 italic mt-10 text-2xl uppercase font-bold  text-dark/75">
                 Hobbies
               </h3>
-              <div className="md:order-3 justify-center">
-                <ul className="list-disc list-inside">
+              <div className="md:order-3 justify-center align-middle self-center">
+                <ul className="list-disc list-inside align-middle justify-center self-center">
                   <li className="font-poppinsLight text-xl">Painting </li>
                   <li className="font-poppinsLight text-xl">Playing Guitar</li>
                   <li className="font-poppinsLight text-xl">Travelling </li>
-                  <li className="font-poppinsLight text-xl">Music  </li>
+                  <li className="font-poppinsLight text-xl">Music</li>
                 </ul>
               </div>
             </div>
