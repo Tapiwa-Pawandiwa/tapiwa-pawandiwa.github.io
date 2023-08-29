@@ -17,7 +17,6 @@ export default function Home() {
       <Head>
         <title>Tapiwa Pawandiwa Portfolio</title>
         <meta name="description" content="Porfolio website" />
-        <link rel="icon" href="../../public/images/personal_logo.png"  sizes="any"/>
 
       </Head>
       <TransitionEffect />
