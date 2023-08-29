@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-import Diner_COVER from "../../public/images/projects/Diner/Diner_COVER.png";
+import Diner_Cover from "../../public/images/projects/Diner/Diner_Cover.png";
 import recipe from "../../public/images/projects/recipe.png";
 import uber_eats_clone from "../../public/images/projects/UberEats/uber_eats_clone.png";
 import guessing from "../../public/images/projects/guessing.png";
@@ -19,7 +19,7 @@ const projectsData = [
     summary:
       "A React Native Mobile application where hosts can invite guests to have a meal in their home at a cost. Guests have the opportunity to experience authentic home food nearby.  ",
     fullDescription: "",
-    img: Diner_COVER,
+    img: Diner_Cover,
     type: "Mobile App",
     videoURL: "",
     github: "https://github.com/Tapiwa-Pawandiwa/DinerExpoFood",
