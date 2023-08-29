@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/tapiwa-Pawandiwa.github.io',
+  // Add basePath
+  basePath: '/github-pages',
   assetPrefix: '/tapiwa-Pawandiwa.github.io/',
 };
 
