@@ -14,6 +14,8 @@ const about = () => {
     <>
       <Head>
         <title>Tapiwa&apos;s Portfolio Website | </title>
+        <link rel="icon" href="../../public/images/personal_logo.png"  sizes="any"/>
+
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col item-center justify-center">
@@ -85,7 +87,7 @@ const about = () => {
                 </span>
               </p>
               <h2 className="text-center mt-4">- Steve Ballmer</h2>
-              <h3 className="mb-4 italic mt-10 text-2xl uppercase font-bold  text-dark/75">
+              <h3 className="mb-4 italic mt-10 text-2xl uppercase font-bold justify-center self-center text-dark/75">
                 Hobbies
               </h3>
               <div className="md:order-3 justify-center align-middle self-center">

@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/public/images/personal_logo.png"  sizes="any"/>
+        <link rel="icon" href="../../public/images/personal_logo.png"  sizes="any"/>
       </Head>
       <main className={`${montserrat.variable} ${redaction.variable} ${poppins.variable} ${poppinsLight.variable} font-poppins bg-light w-full min-h-screen`}>
         <NavBar/>
