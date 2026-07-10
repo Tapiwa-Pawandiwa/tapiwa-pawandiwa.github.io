@@ -64,13 +64,13 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
         <Details
-            position="Lead Engineer & Co Founder"
+            position="Lead Engineer"
             company="FoodStorii"
-            time="2025 - Present"
+            time="Jan 2026 - Jul 2026"
             address="Berlin, Germany (Remote)"
             companyLink="/"
             work="
-            Leading end to end product development at an early stage AI food management startup, from technical architecture to shipping features users touch every day. Own the full development lifecycle, translating business requirements into shipped features and speaking directly with users to validate needs and prioritize the roadmap.
+            Helped build and ship the product for FoodStorii, an early stage AI food management startup, for 7 months following my masters, owning the product end to end from technical architecture to the features users touched every day. The goal was to take the product from MVP to a live beta with real users; with that shipped, I've since moved on and am open to new roles and opportunities.
             • Built the React Native (Expo) mobile app, including onboarding, shopping list, inventory, and AI assisted cooking flows.
             • Designed and built the full stack backend: FastAPI and LangGraph services power an AI assistant, with Supabase and PostgreSQL for data and Redis for caching.
             • Designed and implemented agentic AI workflows with guardrails, including tool and skill orchestration and a barcode/vision product ID pipeline via a proxied Anthropic API integration.

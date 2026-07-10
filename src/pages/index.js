@@ -69,9 +69,10 @@ export default function Home() {
               <p className="my-4 font-poppinsLight md:text-lg sm:text-lg bg-text xl:text-2xl">
                 I build and ship AI powered products end to end, from agentic
                 backends and mobile apps to the UX that makes them usable. MSc
-                Computer Science graduate (distinction) currently leading
-                engineering at an early stage AI startup, with a research
-                background in explainable AI for healthcare.
+                Computer Science graduate (distinction) who most recently led
+                engineering at an early stage AI startup through to a shipped
+                beta, with a research background in explainable AI for
+                healthcare. Now open to new roles and opportunities.
               </p>
 
               <div className="flex items-center mt-2 sm:!justify-start xl:!items-center xl:!justify-center  md:!items-center md:!justify-center">
@@ -118,15 +119,17 @@ export default function Home() {
                 classification with 17 clinicians.
               </p>
               <p className="my-4 font-poppinsLight text-xl justify-center">
-                Today I&lsquo;m the lead engineer at FoodStorii, an early stage
-                AI food management startup, where I own the product end to
-                end. That means talking to users and shaping the roadmap,
-                building the React Native app, building the FastAPI and
-                LangGraph backend, and building the agentic AI systems that
-                power it. Before that, I spent a year as a software
-                engineering working student at Volkswagen Group, working
-                across Svelte, TypeScript, and Go in an Agile, TDD driven
-                team.
+                From January to July 2026, I was the lead engineer at
+                FoodStorii, an early stage AI food management startup, where I
+                owned the product end to end: talking to users and shaping
+                the roadmap, building the React Native app, the FastAPI and
+                LangGraph backend, and the agentic AI systems that powered it.
+                My goal was to take the product from MVP to a live beta with
+                real users, and with that shipped, I&lsquo;m now open to new
+                roles and opportunities. Before FoodStorii, I spent a year as
+                a software engineering working student at Volkswagen Group,
+                working across Svelte, TypeScript, and Go in an Agile, TDD
+                driven team.
               </p>
               <p className="my-4 font-poppinsLight text-xl justify-center">
                 I&lsquo;m especially drawn to the intersection of AI, product,
