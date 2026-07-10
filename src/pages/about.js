@@ -14,7 +14,7 @@ const about = () => {
     <>
       <Head>
         <link rel="icon" href="../../public/myfavicon.png"/>
-        <title>About Me</title>
+        <title>About Me | Tapiwa Pawandiwa</title>
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col item-center justify-center">
@@ -30,46 +30,36 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-poppinsLight text-xl justify-center">
-                Hey there, I&lsquo;m Tapiwa, a tech enthusiast with a flair for
-                creativity! 🚀 Currently, I am pursuing my Masters in Computer Science
-                and juggling my roles as both a developer and student, I&lsquo;m on
-                a mission to become a full-stack wizard 🤓. Over the past 6
-                years, I&lsquo;ve been coding in various languages, from crafting web
-                applications to building sleek mobile apps 💻📱. But wait,
-                there&lsquo;s more! I&lsquo;ve got a thing for blockchain and health tech
-                💡. When I&lsquo;m not knee-deep in lines of code, you&lsquo;ll catch me
-                immersed in the vibrant universe of art and graphic design 🎨
+                I&lsquo;m Tapiwa, an AI engineer and full stack developer based
+                in Berlin. I recently completed my MSc in Computer Science
+                (distinction) at IU Germany, where my thesis, the BERNA
+                Framework, benchmarked explainable AI methods for fetal health
+                classification with 17 clinicians.
               </p>
               <p className="my-4 font-poppinsLight text-xl justify-center">
-                I firmly believe in the transformative potential of technology
-                to impact lives, and I am deeply enthusiastic about utilizing my
-                skills to bring about positive change. My journey has involved
-                active participation in various university competitions, such as
-                the Hultz Prize Competition and the Innovation Think Tank at
-                Rhodes University. <br />
-                <br />
-                One notable experience was our participation in a blockchain
-                competition, where my friends and I were challenged to devise an
-                inventive blockchain solution. Our efforts led us to secure the
-                first-place position in the competition. Alongside this, I
-                played an integral role in the Sudo-Soc university society.
-                Within Sudo-Soc, our focus was on educating fellow students in
-                coding, orchestrating coding community events, and coordinating
-                hackathons. <br />
-                <br />
-                Furthermore, I was part of an initiative within Sudo-Soc that
-                entailed establishing a computer lab within the local community.
-                This endeavor exemplified our commitment to extending the
-                benefits of technology beyond the university setting, bridging
-                the digital divide, and fostering technological inclusivity
+                Today I&lsquo;m the lead engineer at FoodStorii, an early stage
+                AI food management startup, where I own the product end to
+                end. That means talking to users and shaping the roadmap,
+                building the React Native app, building the FastAPI and
+                LangGraph backend, and building the agentic AI systems that
+                power it. Before that, I spent a year as a software
+                engineering working student at Volkswagen Group, working
+                across Svelte, TypeScript, and Go in an Agile, TDD driven
+                team.
               </p>
               <p className="my-4 font-poppinsLight text-xl justify-center">
-                I believe technology is forever changing, as a result of this I
-                am not afraid to learn new languages, skills and technologies. I
-                am currently researching and experimenting with Blockchain and
-                Web3.
+                I&lsquo;m especially drawn to the intersection of AI, product,
+                and real world deployment. I want to build systems that are
+                not just technically sound but genuinely usable, and I bring
+                the same lens to my research interests in applied AI for
+                maternal and fetal healthcare.
               </p>
-          
+              <p className="my-4 font-poppinsLight text-xl justify-center">
+                Outside of engineering, I paint, and I keep close tabs on AI
+                research at a conceptual level. It&apos;s a personal interest
+                as much as a professional one.
+              </p>
+
               <p className="text-lg mt-8 italic font-poppinsLight bg-text text-center relative">
                 <span className="absolute top-0 left-0 transform -translate-x-2/3 -translate-y-1/4 text-5xl text-primary">
                   &ldquo;

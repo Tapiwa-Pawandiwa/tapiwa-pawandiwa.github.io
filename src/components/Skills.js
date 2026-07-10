@@ -52,6 +52,26 @@ const Skills = () => {
         <Skill name="NextJS" x="0vw" y="10vw" />
         <Skill name="SQL" x="-30vw" y="5vw" />
 
+        <Skill name="FastAPI" x="-35vw" y="-20vw" />
+        <Skill name="LangGraph" x="35vw" y="-5vw" />
+        <Skill name="Claude API" x="-5vw" y="-35vw" />
+        <Skill name="Agentic AI Orchestration" x="5vw" y="30vw" />
+        <Skill name="PostgreSQL" x="-22vw" y="-5vw" />
+        <Skill name="Supabase" x="30vw" y="20vw" />
+        <Skill name="Redis" x="-35vw" y="10vw" />
+        <Skill name="Docker" x="15vw" y="5vw" />
+        <Skill name="TypeScript" x="-10vw" y="5vw" />
+        <Skill name="Expo (EAS)" x="20vw" y="-18vw" />
+        <Skill name="Svelte" x="-28vw" y="25vw" />
+        <Skill name="GitHub Actions (CI/CD)" x="0vw" y="-25vw" />
+        <Skill name="Render" x="32vw" y="-25vw" />
+        <Skill name="Sentry" x="-15vw" y="15vw" />
+        <Skill name="PostHog" x="8vw" y="-10vw" />
+        <Skill name="TestFlight" x="-30vw" y="-30vw" />
+        <Skill name="UI/UX Design" x="18vw" y="22vw" />
+        <Skill name="User Research" x="-8vw" y="18vw" />
+        <Skill name="Explainable AI (XAI)" x="25vw" y="-30vw" />
+
       </motion.div>
     </>
   );

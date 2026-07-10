@@ -58,12 +58,12 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
             <Details
-            type="Masters in Computer Science"
-            place="IU"
-            time="2021-Present"
+            type="MSc Computer Science (Distinction)"
+            place="IU Germany"
+            time="2021 - 2026"
             link= 'https://www.iu.de'
             address="Berlin, Germany"
-            info="I am currently completing my Masters in Computer Science at IU. I have taken a keen interest in Blockchain and Data Science. I also have some projects which you can find in the projects section "
+            info="Graduated with distinction. Thesis: the BERNA Framework, an explainable AI approach for fetal health classification from CTG data, validated with 17 clinicians. This work now underpins ongoing independent research into AI for maternal fetal healthcare."
           />
 
            <Details

@@ -64,6 +64,23 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
         <Details
+            position="Lead Engineer & Co Founder"
+            company="FoodStorii"
+            time="2025 - Present"
+            address="Berlin, Germany (Remote)"
+            companyLink="/"
+            work="
+            Leading end to end product development at an early stage AI food management startup, from technical architecture to shipping features users touch every day. Own the full development lifecycle, translating business requirements into shipped features and speaking directly with users to validate needs and prioritize the roadmap.
+            • Built the React Native (Expo) mobile app, including onboarding, shopping list, inventory, and AI assisted cooking flows.
+            • Designed and built the full stack backend: FastAPI and LangGraph services power an AI assistant, with Supabase and PostgreSQL for data and Redis for caching.
+            • Designed and implemented agentic AI workflows with guardrails, including tool and skill orchestration and a barcode/vision product ID pipeline via a proxied Anthropic API integration.
+            • Led UI/UX design for core screens (onboarding, item editing, shopping list), balancing usability with fast iteration.
+            • Owned DevOps: CI/CD pipelines, GitHub based workflows, Render deployment, PostHog analytics, and Sentry error monitoring.
+            • Handled database design, security hardening, and debugging across the stack, including a security review covering RLS policies, rate limiting, and PII exposure.
+            • Took the app from MVP to a live beta, testing and distributing via TestFlight and EAS to internal test users.
+            "
+          />
+        <Details
             position="Software Engineer Working Student"
             company="Volkswagen SID"
             time="2023 - Present"
