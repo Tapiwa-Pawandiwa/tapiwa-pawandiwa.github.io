@@ -13,7 +13,6 @@ const about = () => {
   return (
     <>
       <Head>
-        <link rel="icon" href="../../public/myfavicon.png"/>
         <title>About Me | Tapiwa Pawandiwa</title>
       </Head>
       <TransitionEffect />
@@ -30,7 +29,7 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-poppinsLight text-xl justify-center">
-                I&lsquo;m Tapiwa, an AI engineer and full stack developer based
+                I&lsquo;m Tapiwa, an AI researcher and full stack developer based
                 in Berlin. I recently completed my MSc in Computer Science
                 (distinction) at IU Germany, where my thesis, the BERNA
                 Framework, benchmarked explainable AI methods for fetal health
@@ -38,10 +37,10 @@ const about = () => {
               </p>
               <p className="my-4 font-poppinsLight text-xl justify-center">
                 From January to July 2026, I was the lead engineer at
-                FoodStorii, an early stage AI food management startup, where I
+                FoodStorii, an early stage AI kitchen management startup, where I
                 owned the product end to end: talking to users and shaping
-                the roadmap, building the React Native app, the FastAPI and
-                LangGraph backend, and the agentic AI systems that powered it.
+                the roadmap, building & designing the React Native app, the API's, database, 
+                LangGraph setup, skills and agentic orchestration that powered it.
                 My goal was to take the product from MVP to a live beta with
                 real users, and with that shipped, I&lsquo;m now open to new
                 roles and opportunities. Before FoodStorii, I spent a year as

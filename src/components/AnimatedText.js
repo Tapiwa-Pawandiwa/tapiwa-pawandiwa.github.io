@@ -46,14 +46,15 @@ const AnimatedText = ({ text, className = "", type }) => {
         className={` inline-block w-full bg-gradient-tor from-black to-primary text-dark font-bold capitalize text-8xl ${className}`}
         variants={quote}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.4 }}
         whileHover={{
           y: -2,
           x: 5,
         }}
       >
         {words.map((word, wordIndex) => (
-          <motion.span key={word + "-" + wordIndex} className="inline-block">
+          <motion.span key={word + "-" + wordIndex} className="inline-block" variants={singleWord}>
             {word.split("").map((character, characterIndex) => (
               <span
                 key={character + "-" + characterIndex}

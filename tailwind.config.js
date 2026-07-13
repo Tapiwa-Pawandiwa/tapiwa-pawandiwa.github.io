@@ -16,6 +16,7 @@ module.exports = {
         redaction: ['var(--font-redaction)'],
         poppins: ['var(--font-poppins)'],
         poppinsLight: ['var(--font-poppinsLight)'],
+        inter: ['var(--font-inter)'],
       },
       fontSize:{
         '10xl': '5rem',

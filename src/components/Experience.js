@@ -67,7 +67,7 @@ const Experience = () => {
             position="Lead Engineer"
             company="FoodStorii"
             time="Jan 2026 - Jul 2026"
-            address="Berlin, Germany (Remote)"
+            address="Berlin, Germany"
             companyLink="/"
             work="
             Helped build and ship the product for FoodStorii, an early stage AI food management startup, for 7 months following my masters, owning the product end to end from technical architecture to the features users touched every day. The goal was to take the product from MVP to a live beta with real users; with that shipped, I've since moved on and am open to new roles and opportunities.
@@ -83,7 +83,7 @@ const Experience = () => {
         <Details
             position="Software Engineer Working Student"
             company="Volkswagen SID"
-            time="2023 - Present"
+            time="2023 - 2024"
             address="Berlin, Germany"
             companyLink="https://www.volkswagen-group.com/en"
             work="
@@ -104,7 +104,7 @@ const Experience = () => {
           <Details
             position="Software Engineer Intern"
             company="Singular Systems"
-            time="Winter 2019"
+            time="July 2019"
             address="Cape Town, South Africa"
             companyLink="https://www.singular.co.za"
             work="
