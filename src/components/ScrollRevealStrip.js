@@ -27,10 +27,14 @@ const ScrollRevealStrip = () => {
   let charCursor = 0;
 
   return (
-    <div ref={ref} className="w-full overflow-x-auto">
-      <p className="whitespace-nowrap text-center text-light font-bold text-5xl lg:text-4xl md:text-2xl xs:text-lg tracking-wide px-8">
+    <div ref={ref} className="w-full flex justify-center">
+      {/* Always allowed to wrap and center — the full sentence at this font
+          size is wider than most viewports, not just phones, so betting on
+          a single-line width at any one breakpoint just moves the overflow
+          around. Wrapping is the only width-proof fix. */}
+      <p className="whitespace-normal text-center text-light font-bold text-5xl lg:text-4xl md:text-2xl sm:text-base xs:text-sm tracking-wide px-8">
         {words.map((word, wi) => (
-          <span key={wi} className="inline-block mr-5 md:mr-3 xs:mr-2">
+          <span key={wi} className="inline-block mr-5 md:mr-3 sm:mr-1.5 xs:mr-1">
             {word.split("").map((ch, ci) => {
               const i = charCursor++;
               const start = (i / totalChars) * 0.85;

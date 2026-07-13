@@ -35,42 +35,21 @@ const skillGroups = [
   },
 ];
 
-const container = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.045, delayChildren: 0.05 },
-  },
-};
+// A pill starts collapsed at its group's center point and is pulled outward
+// to its real (readable, non-overlapping) flex position as the group
+// scrolls through the viewport — scrubbed directly to scroll position, like
+// a starburst, rather than a fixed-duration animation that plays once.
+const Skill = ({ name, floatY, dx, dy, progress }) => {
+  const burstX = useTransform(progress, [0, 0.8], [dx, 0]);
+  const burstY = useTransform(progress, [0, 0.8], [dy, 0]);
+  const opacity = useTransform(progress, [0, 0.15, 0.8], [0, 0.5, 1]);
+  const scale = useTransform(progress, [0, 0.8], [0.2, 1]);
+  const y = useTransform([burstY, floatY], ([b, f]) => b + f);
 
-// Pills start collapsed at the group's center point and burst outward to
-// their real (readable, non-overlapping) flex position — approximating the
-// original "explode from center" cloud without bringing back the overlap.
-const pill = {
-  hidden: (custom) => ({
-    opacity: 0,
-    scale: 0.15,
-    x: custom.dx,
-    y: custom.dy,
-  }),
-  show: {
-    opacity: 1,
-    scale: 1,
-    x: 0,
-    y: 0,
-    transition: { type: "spring", stiffness: 260, damping: 16, mass: 0.7 },
-  },
-};
-
-// Each pill is given one of a few float "speeds" (index % 3) that drift it up
-// or down slightly as the section scrolls through the viewport, so the whole
-// field feels alive without breaking the readable, non-overlapping layout.
-const Skill = ({ name, floatY, burst }) => {
   return (
     <motion.span
-      variants={pill}
-      custom={burst}
-      style={{ y: floatY }}
-      whileHover={{ scale: 1.06 }}
+      style={{ x: burstX, y, opacity, scale }}
+      whileHover={{ scale: 1.1 }}
       className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-light
       text-base py-2.5 px-5
       md:text-sm md:py-2 md:px-4
@@ -82,6 +61,12 @@ const Skill = ({ name, floatY, burst }) => {
 };
 
 const SkillGroup = ({ label, skills, floatYs }) => {
+  const groupRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: groupRef,
+    offset: ["start 0.95", "start 0.35"],
+  });
+
   // Approximate each pill's position on a grid so the "burst" pulls it in
   // from a direction radiating away from the group's own center, rather than
   // a flat left/right convergence.
@@ -91,13 +76,7 @@ const SkillGroup = ({ label, skills, floatYs }) => {
   const centerRow = (rows - 1) / 2;
 
   return (
-    <motion.div
-      className="w-full flex flex-col items-center mb-10 last:mb-0"
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={container}
-    >
+    <div ref={groupRef} className="w-full flex flex-col items-center mb-10 last:mb-0">
       <h3 className="text-primary font-poppins uppercase tracking-wide text-sm mb-4 md:text-xs">
         {label}
       </h3>
@@ -105,21 +84,21 @@ const SkillGroup = ({ label, skills, floatYs }) => {
         {skills.map((name, i) => {
           const row = Math.floor(i / cols);
           const col = i % cols;
-          const burst = {
-            dx: (centerCol - col) * 60,
-            dy: (centerRow - row) * 46,
-          };
+          const dx = (centerCol - col) * 90;
+          const dy = (centerRow - row) * 70;
           return (
             <Skill
               key={name}
               name={name}
               floatY={floatYs[i % floatYs.length]}
-              burst={burst}
+              dx={dx}
+              dy={dy}
+              progress={scrollYProgress}
             />
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -169,7 +148,7 @@ const Skills = () => {
           Skills
         </motion.h2>
 
-        <div className="w-full max-w-4xl mx-auto py-12 px-4">
+        <div className="w-full mx-auto py-12 px-5">
           {skillGroups.map((group) => (
             <SkillGroup key={group.label} {...group} floatYs={floatYs} />
           ))}

@@ -23,7 +23,7 @@ const stickers = [
   {
     src: computerSticker,
     alt: "Retro computer sticker",
-    className: "top-[16%] left-[9%] w-36 lg:w-28 md:w-20 sm:w-16 xs:w-14",
+    className: "top-[16%] left-[9%] w-[188px] lg:w-[146px] md:w-[104px] sm:w-[83px] xs:w-[73px]",
     rotate: -10,
     fallRotate: -220,
     fallX: -60,
@@ -33,7 +33,7 @@ const stickers = [
     src: starSticker,
     alt: "Star sticker",
     className:
-      "top-[18%] right-[17%] w-28 lg:w-24 md:right-auto md:left-[26%] md:top-[8%] md:w-16 sm:w-14 xs:w-12",
+      "top-[18%] right-[17%] w-[146px] lg:w-[125px] md:right-auto md:left-[26%] md:top-[8%] md:w-[83px] sm:w-[73px] xs:w-[62px]",
     rotate: 14,
     fallRotate: 260,
     fallX: 50,
@@ -42,7 +42,7 @@ const stickers = [
   {
     src: smileySticker,
     alt: "Smiley face sticker",
-    className: "top-[46%] left-[7%] w-32 lg:w-24 md:top-[30%] md:w-18 sm:w-14 xs:w-12",
+    className: "top-[46%] left-[7%] w-[166px] lg:w-[125px] md:top-[30%] md:w-[94px] sm:w-[73px] xs:w-[62px]",
     rotate: -8,
     fallRotate: -180,
     fallX: -40,
@@ -51,7 +51,7 @@ const stickers = [
   {
     src: butterflySticker,
     alt: "Butterfly sticker",
-    className: "top-[58%] right-[11%] w-32 lg:w-24 md:w-18 sm:w-14 xs:w-12",
+    className: "top-[58%] right-[11%] w-[166px] lg:w-[125px] md:w-[94px] sm:w-[73px] xs:w-[62px]",
     rotate: 12,
     fallRotate: 200,
     fallX: 40,
@@ -60,7 +60,7 @@ const stickers = [
   {
     src: rocketSticker,
     alt: "Rocket sticker",
-    className: "bottom-[9%] right-[24%] w-36 lg:w-28 md:w-20 sm:w-16 xs:w-14",
+    className: "bottom-[9%] right-[24%] w-[188px] lg:w-[146px] md:w-[104px] sm:w-[83px] xs:w-[73px]",
     rotate: -16,
     fallRotate: -300,
     fallX: -30,

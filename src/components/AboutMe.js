@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import computersImg from "../../public/images/profile/computers_tapiwa.png";
 import suitImg from "../../public/images/profile/suit_portrait.jpg";
 import coolImg from "../../public/images/profile/profile_cool.png";
+import AnimatedText from "./AnimatedText";
 
 const Emph = ({ children }) => (
   <span className="font-bold text-[#111111] underline underline-offset-[6px] decoration-2">
@@ -24,10 +25,10 @@ const AboutBlock = ({ image, alt, reverse, children }) => (
     viewport={{ once: true, amount: 0.25 }}
     transition={{ duration: 0.7 }}
   >
-    <div className="w-[42%] md:w-full shrink-0">
+    <div className="w-[46%] md:w-full shrink-0">
       <Image src={image} alt={alt} className="w-full h-auto" />
     </div>
-    <div className="w-[58%] md:w-full">
+    <div className="w-[54%] md:w-full">
       <p className={bodyTextClass}>{children}</p>
     </div>
   </motion.div>
@@ -36,44 +37,39 @@ const AboutBlock = ({ image, alt, reverse, children }) => (
 const AboutMe = () => {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-[1100px] mx-auto px-6 sm:px-4 py-32 md:py-20">
+      <div className="max-w-[1500px] pl-16 pr-8 lg:pl-10 lg:pr-6 md:px-4 sm:px-4 py-32 md:py-20">
         <div className="mb-[120px] md:mb-20">
-          <p className="text-[15px] font-semibold uppercase tracking-[0.14em] text-[#9a9a9a] mb-4">
-            About Me
-          </p>
-          <p className="text-[15px] font-semibold text-black max-w-[520px]">
-            Tapiwa &mdash; AI engineer and full-stack developer, based in
-            Berlin.
-          </p>
+        <AnimatedText
+                text="About Me"
+                className="!text-10xl !text-left md:!text-center lg:!text-center sm:!text-center text-orange-700 "
+                type="redaction"
+              />
         </div>
 
         <div className="flex flex-col gap-[120px] md:gap-20 xs:gap-16">
           <AboutBlock image={computersImg} alt="Tapiwa graduating, surrounded by laptops" reverse>
-            I&apos;m an <Emph>AI engineer and full-stack developer</Emph> who
-            builds at the intersection of LLMs, agents, and real product —
-            and likes sitting close to the problem, talking to the people who
-            have it. MSc Computer Science, distinction,{" "}
-            <Emph>IU Germany</Emph>, where my thesis, the{" "}
-            <Emph>BERNA Framework</Emph>, benchmarked{" "}
-            <Emph>explainable AI (XAI)</Emph> methods for fetal health
-            classification with 17 clinicians.
+          I’m an <Emph>AI engineer and full-stack developer </Emph> building web and mobile
+           products with LLMs, AI agents, and machine learning.I enjoy working closely with end
+            users to understand their problems and turn them into solutions. I enjoy product development and research.
+           I hold an <Emph>MSc in Computer Science</Emph> with distinction from IU Germany, where my thesis introduced the BERNA Framework
+            for benchmarking <Emph>explainable AI</Emph> methods in fetal health classification with 17 clinicians.
           </AboutBlock>
 
           <AboutBlock image={suitImg} alt="Tapiwa portrait in a suit">
             From January to July 2026, I was <Emph>lead engineer</Emph> at{" "}
             <Emph>FoodStorii</Emph>, an early-stage AI food management
-            startup — talking directly to users, then shipping what they
+            startup, talking directly to users, then shipping what they
             needed: a <Emph>React Native</Emph> app, a{" "}
             <Emph>Python/FastAPI</Emph> backend, and a <Emph>LangGraph</Emph>
-            -based AI agent handling reasoning and conversation. Took it from
+             based AI agent handling reasoning and conversation. I setup skills and orchestration that powered it. Took it from
             MVP to a live beta with real users. Before that, a year as a{" "}
             <Emph>software engineer</Emph> at <Emph>Volkswagen Group</Emph>,
-            shipping in Svelte, TypeScript, and Go on an Agile, TDD-driven
+            working in Svelte, TypeScript, and Go on an Agile, TDD-driven
             team.
           </AboutBlock>
 
           <AboutBlock image={coolImg} alt="Tapiwa at his desk with a laptop and rubber duck" reverse>
-            I pick up new stacks fast — languages, frameworks, AI tooling,
+            I pick up new technologies fast from languages, frameworks, AI tooling, databases, and more,
             whatever the problem needs. I design in <Emph>Figma</Emph>, code
             full-stack, and bring a builder&apos;s and an artist&apos;s eye to
             the same work. I like research, I like people, and I like
