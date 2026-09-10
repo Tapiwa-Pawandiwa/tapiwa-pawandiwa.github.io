@@ -97,8 +97,7 @@ const Experience = () => {
             address="Remote"
             companyLink="/"
             work="
-            Designing and maintaining WordPress websites for clients. Some websites include: 
-            https://lokalimglas.de and https://grandeurbarbers.com
+            Designing and maintaining WordPress websites for clients.
             "
           />
           <Details

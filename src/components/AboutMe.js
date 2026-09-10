@@ -7,7 +7,7 @@ import coolImg from "../../public/images/profile/profile_cool.png";
 import AnimatedText from "./AnimatedText";
 
 const Emph = ({ children }) => (
-  <span className="font-bold text-[#111111] underline underline-offset-[6px] decoration-2">
+  <span className="font-bold text-[#111111]">
     {children}
   </span>
 );

@@ -101,12 +101,13 @@ export default function Home() {
                 type="redaction"
               />
               <p className="my-4 font-poppinsLight md:text-lg sm:text-lg bg-text xl:text-2xl">
-                I build and ship AI powered products end to end, from agentic
-                backends and mobile apps to the UX that makes them usable. MSc
-                Computer Science graduate (distinction) who most recently led
-                engineering at an early stage AI startup through to a shipped
-                beta, with a research background in explainable AI for
-                healthcare. Now open to new roles and opportunities.
+                I build and ship AI products end to end:{" "}
+                <span className="font-bold">web apps</span>,{" "}
+                <span className="font-bold">agentic products</span>,{" "}
+                <span className="font-bold">mobile apps</span>, and the
+                UI/UX that ties them together. I am a Masters Graduate
+                (Thesis distinction) in Computer Science, with a research
+                background in Explainable AI in healthcare.
               </p>
 
               <div className="flex items-center mt-2 sm:!justify-start xl:!items-center xl:!justify-center  md:!items-center md:!justify-center">

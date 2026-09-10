@@ -1,0 +1,552 @@
+.page {
+  background: #f7f3ee;
+  color: #111111;
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1240px;
+  margin: 0 auto;
+  --ink: #111111;
+  --paper: #f7f3ee;
+  --accent: #ee6a2e;
+}
+
+.frame ::selection {
+  background: #ee6a2e;
+  color: #fff;
+}
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.mastheadCell {
+  padding: clamp(22px, 4cqi, 48px);
+  min-width: 0;
+}
+
+.mastheadImageCell {
+  composes: mastheadCell;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.eyebrow {
+  margin: 0 0 clamp(14px, 3cqi, 26px);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.pageTitle {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(44px, 11cqi, 118px);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+
+.mastheadImage {
+  width: clamp(130px, 32cqi, 250px);
+  height: auto;
+}
+
+/* ---------- Featured band ---------- */
+
+.featuredSection {
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.featuredBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px clamp(16px, 4cqi, 44px);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.featuredBarLabel {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.featuredBarCount {
+  composes: featuredBarLabel;
+  color: var(--accent);
+}
+
+.featuredBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.featuredMedia {
+  min-width: 0;
+  background: var(--accent);
+  border-right: 1.5px solid var(--ink);
+  padding: clamp(24px, 4cqi, 40px) clamp(20px, 4cqi, 40px) 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(10px, 2cqi, 20px);
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.phoneMock {
+  width: 44%;
+  max-width: 190px;
+  border: 6px solid var(--ink);
+  border-bottom: 0;
+  border-radius: 22px 22px 0 0;
+  overflow: hidden;
+  background: #fff;
+  display: block;
+}
+
+.phoneMockOffset {
+  composes: phoneMock;
+  margin-bottom: -28px;
+}
+
+/* Browser-chrome frame: the featured band's media treatment for web (not
+   mobile) projects — same "rises out of the accent field" placement as the
+   phone mockups, just shaped like a browser window instead of a handset. */
+.browserFrame {
+  width: min(86%, 520px);
+  background: #fff;
+  border: 1.5px solid var(--ink);
+  border-bottom: 0;
+  display: block;
+}
+
+.browserBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.browserDot {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  background: var(--ink);
+  opacity: 0.35;
+}
+
+.browserUrl {
+  margin-left: 6px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.55);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.browserShot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.browserPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(17, 17, 17, 0.12) 0 1px,
+    transparent 1px 10px
+  );
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 16px;
+  white-space: pre-line;
+  color: var(--ink);
+}
+
+.featuredContent {
+  min-width: 0;
+  padding: clamp(24px, 4cqi, 44px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.featuredKicker {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.55);
+}
+
+.featuredTitle {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(34px, 7cqi, 72px);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+}
+
+.featuredDesc {
+  margin: 0;
+  font-size: clamp(14px, 1.8cqi, 17px);
+  line-height: 1.6;
+  color: rgba(17, 17, 17, 0.78);
+  text-wrap: pretty;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border: 1.5px solid var(--ink);
+}
+
+.actionRow {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.btnPrimary {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1.5px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 14px 20px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 0 var(--accent);
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  box-shadow: 0 0 0 var(--accent);
+  transform: translate(5px, 5px);
+}
+
+.btnOutline {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  padding: 14px 20px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 80ms linear, color 80ms linear;
+}
+
+.btnOutline:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btnPrimary,
+  .btnOutline {
+    transition: none;
+  }
+}
+
+/* ---------- Rail / rows section ---------- */
+
+.railSection {
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.railHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px clamp(16px, 4cqi, 44px);
+}
+
+.railHeaderTitle {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.railArrows {
+  display: flex;
+  gap: 8px;
+}
+
+.arrowBtn {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+  transition: background 80ms linear, color 80ms linear, opacity 80ms linear;
+}
+
+.arrowBtn:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.arrowBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrowBtn {
+    transition: none;
+  }
+}
+
+.rail {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-top: 1.5px solid var(--ink);
+  scrollbar-width: none;
+}
+
+.rail::-webkit-scrollbar {
+  height: 0;
+}
+
+.railCard {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: min(86cqi, 360px);
+  min-height: 460px;
+  border-right: 1.5px solid var(--ink);
+  padding: clamp(20px, 3cqi, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.railCardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.railCardKicker {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  max-width: 62%;
+}
+
+.railCardIndex {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  opacity: 0.35;
+}
+
+.railCardTitle {
+  margin: clamp(18px, 4cqi, 40px) 0 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(30px, 5cqi, 44px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+}
+
+.railCardTagline {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  opacity: 0.82;
+  text-wrap: pretty;
+}
+
+.cardChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.cardChip {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border: 1px solid;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1.5px solid;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cardLink {
+  color: inherit;
+  border-bottom: 1.5px solid;
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  border-bottom-color: currentColor;
+}
+
+.cardDetails {
+  margin-left: auto;
+  opacity: 0.7;
+}
+
+/* ---------- Earlier projects ---------- */
+
+.earlierSection {
+  padding: clamp(24px, 4cqi, 44px) clamp(16px, 4cqi, 44px);
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.earlierHeading {
+  margin: 0 0 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(22px, 4cqi, 38px);
+  letter-spacing: -0.035em;
+}
+
+.earlierSubLabel {
+  margin: 0 0 22px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.earlierRow {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(12px, 2cqi, 24px);
+  padding: 16px 0;
+  border-top: 1.5px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 80ms linear;
+}
+
+.earlierRow:hover {
+  background: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .earlierRow {
+    transition: none;
+  }
+}
+
+.earlierIndex {
+  font-size: 11px;
+  opacity: 0.5;
+  flex: none;
+}
+
+.earlierName {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(16px, 2.4cqi, 22px);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  flex: none;
+}
+
+.earlierLeader {
+  flex: 1;
+  min-width: 12px;
+  border-bottom: 1px dotted rgba(17, 17, 17, 0.35);
+}
+
+.earlierTagline {
+  font-size: 13px;
+  opacity: 0.7;
+  text-align: right;
+  max-width: 46%;
+}
+
+.earlierGh {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  flex: none;
+}
+
+/* ---------- Footer line ---------- */
+
+.footerLine {
+  padding: clamp(20px, 3cqi, 34px) clamp(16px, 4cqi, 44px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footerDaysNumber {
+  color: var(--accent);
+}
+
+.footerRight {
+  opacity: 0.6;
+}
