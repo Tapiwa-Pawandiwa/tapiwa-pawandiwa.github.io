@@ -5,9 +5,6 @@ import janetChatUI from "../../public/images/projects/Janet/janet-chat-ui.png";
 
 export { ProjectsImage };
 
-// JANET's live demo is temporarily down for work — demo links below are
-// nulled out rather than removed. Restore: "https://chat-ui-868228189550.europe-north1.run.app/chat"
-
 export const FEATURED = {
   slug: "janet",
   kicker: "Agentic AI platform · Google ADK · Solo build",
@@ -46,7 +43,7 @@ export const PROJECTS = [
       "Server-Sent Events",
     ],
     github: "https://github.com/Tapiwa-Pawandiwa/hotel-concierge-agent",
-    demo: null,
+    demo: "https://chat-ui-868228189550.europe-north1.run.app/chat",
     facts: [
       { label: "Role", value: "Solo · Agent engineer" },
       { label: "Year", value: "2026—Present" },
